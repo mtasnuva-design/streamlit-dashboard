@@ -4,17 +4,29 @@ import plotly.graph_objects as go
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
-import datetime
-from PIL import Image
-import os
-import warnings
-warnings.filterwarnings('ignore')
 
 st.set_page_config(
     page_title="Dashboard",
     page_icon=":bar_chart:",
 )
 
+project_1_page = st.Page(
+    page="Task_Summary.py",
+    title="Task Summary",
+    default=True,
+)
+
+project_2_page = st.Page(
+    page="Pages/Project_Status.py",
+    title="Project Status",
+
+)
+
+project_3_page = st.Page(
+    page="Pages/Member_Status.py",
+    title="Member Status",
+
+)
 st.title("Task summary for Q1")
 st.divider()
 st.sidebar.success("Select a page above")
